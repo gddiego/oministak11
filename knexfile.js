@@ -4,7 +4,10 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      filename: './dev.postgresql'
+      filename: './src/database/db.pg'
+    },
+    migrations: {
+      directory: './src/database/migrations'
     }
   },
 
